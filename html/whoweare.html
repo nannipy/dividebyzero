@@ -1,0 +1,226 @@
+<!--  
+    whoweare.html
+      Pagina contentente una breve descrizione dell'idea alla base del progetto e dell'organizzazione stessa,
+      oltre che un riferimento agli ideatori e sviluppatori stessi.
+-->
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Giovanni Pernazza & Alessandro Maone">
+    <title>Divide by Zero</title>
+    <link rel="icon" type="image/x-icon" href="../img/Logo_DBZ_red.png">
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- icone -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+
+  </head>
+  <body>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--banner di login-->
+  <section class="home">
+    <div class="form_container">
+      <i class="ri-close-line form_close"></i>
+      <!--Login-->
+      <div class="form login_form">
+        <form action="login.php" method="POST" name="login">
+          <h2>Login</h2>
+          
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" name="email" class="loginEmail" required />
+            <i class="ri-mail-line email"></i>
+          </div>
+          
+          <div class="input_box">
+            <input type="password" placeholder="Enter your password" name="password" class="loginPassword" required />
+            <i class="ri-lock-line password"></i>
+            <i class="ri-eye-off-line pw_hide"></i>
+          </div>
+
+          <div class="option_field">
+            <span class="checkbox">
+              <input type="checkbox" id="check" name="checkbox">
+              <label for="check">Remember me</label>
+            </span>
+          </div>
+
+          <button class="btn btn-bd-primary button">Login Now</button>
+
+          <div class="login_signup">
+            Don't have an account? <a href="#" id="signup">Sign-up</a>
+          </div>
+        </form>
+      </div>
+
+      <!--Sign-up-->
+      <div class="form signup_form">
+        <form action="signup.php" method="POST" class="su_form" onsubmit="return validaForm();">
+          <h2>Sign-up</h2>
+          
+          <div class="input_box email_field">
+            <input type="email" placeholder="Enter your email" name="email" class="email" />
+            <i class="ri-mail-line email"></i>
+            <span class="error email-error">
+              <i class="ri-error-warning-line error-icon"></i>
+              <p class="error-text">Please enter a valid email</p>
+            </span>
+          </div>
+          
+          <div class="input_box create_psw">
+            <input type="password" placeholder="Create password" name="password" class="password" />
+            <i class="ri-lock-line password"></i>
+            <i class="ri-eye-off-line pw_hide"></i>
+            <span class="error password-error">
+              <i class="ri-error-warning-line error-icon"></i>
+              <p class="error-text">Please enter at least 8 character with number,
+                symbol, small and capital letter.
+              </p>
+            </span>
+          </div>
+          
+          <div class="input_box confirm_psw">
+            <input type="password" placeholder="Confirm password" name="cpassword" class="cpassword" />
+            <i class="ri-lock-line password"></i>
+            <i class="ri-eye-off-line pw_hide"></i>
+            <span class="error cpassword-error">
+              <i class="ri-error-warning-line error-icon"></i>
+              <p class="error-text">Password dont't match</p>
+            </span>
+          </div>
+
+          <div class="option_field">
+            <span class="checkbox">
+              <input type="checkbox" id="checktc" name="checkbox" required>
+              <label for="checktc">Accept terms and conditions</label>
+            </span>
+          </div>
+          
+          <input type="submit" value="Sign-up Now" class="btn btn-bd-primary button"></input>
+
+          <div class="login_signup">
+            Already have an account? <a href="#" id="login">Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <!--header pagine-->
+  <header>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <a href="index.html" class="logo"><img class="logo_img" src="../img/Logo_DBZ_red.png" alt="100px" width="100px"> DIVIDE BY ZERO</a>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="events.php">Eventi</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a class="active" href="whoweare.html">Chi siamo</a></li>
+      </ul>
+    </nav>
+    <div class="login">
+      <a class="acc" id="login-open"><i class="ri-user-fill"></i>Login</a>
+      <a class="vline">|</a>
+      <a class="reg" id ="signup-open">Sign Up</a>
+    </div>
+  </header>
+  
+  <!--sezione principale-->
+  <main>
+    <section class="bg-blue" style="margin-left: 10px; margin-right: 10px;" id="team">
+      <div class="container">
+        <div><p></p></div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="team-member">
+              <div><p><br></p></div>
+                <h2 class=" text-light visione livetext "> LA NOSTRA VISIONE </h2>
+                <h3 class=" text-light descrizionewwa">  <span style="color:#C11D15 ;">Divide by Zero </span>è un luogo che unisce la passione per la<span style="color:yellow;">
+                  tecnologia</span> e le <span style="color:yellow;">persone,</span> creando uno spazio di connessione e collaborazione. <br/>
+                  Organizziamo <span style="color:lightgreen;">workshop</span>, eventi e occasioni di networking per stimolare la  <span style="color:lightseagreen;">condivisione</span> di conoscenze e favorire la collaborazione. <br/>
+                  Entra a far parte della nostra <span style="color:#5A65F4;">community </span> per avere l'opportunità di incontrare persone appassionate e realizzare progetti  <span style="color:#C11D15 ;">insieme.</span>
+                </h3>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="team-member" id="static_logo">
+              <img class=" logowwa rounded-circle" src="../img/Logo_DBZ_red-blue.png" width="300" height="300">
+              <div><p></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <p> </p>
+    </div>
+<!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div><p></p></div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" id="rotazione" src="../img/foto_profilo_linkedin.png" width="200" height="200">
+              <div><p></p></div>
+              <h4>Giovanni Battista Pernazza</h4>
+              <p class="text-muted">Matricola: 1936239</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" id="rotazione"src="../img/propic.png" width="200" height="200">
+              <div><p></p></div>
+              <h4>Alessandro Maone</h4>
+              <p class="text-muted">Matricola: 1945149</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+
+  <!--fondo pagina-->
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md" style="text-align: center;">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Chi siamo</a></li>
+          <li><a class="link-secondary" href="#">Privacy</a></li>
+          <li><a class="link-secondary" href="#">Terms</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md elemento" style="text-align: center;">
+        <h5>Newsletter</h5>
+        <br>
+        <form action="newsletter.php" method="POST" name="newsletter" class="col-md" onsubmit="verificaForm();">
+          <input type="email" name="email" placeholder="Your email address" class="form-control" style="text-align: center;">
+          <br style="line-height: 10%;">
+          <input type="submit" value="SUBSCRIBE NOW" class="btn btn-bd-primary">
+        </form>
+      </div>
+      <div class="col-6 col-md" style="text-align: center;">
+        <h5>Contact</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a href="https://www.instagram.com/dividebyzero.community/" class="social_icon"><i class="ri-instagram-line"></i></a>
+            <a href="https://discord.gg/5gD6bk52" class="social_icon"><i class="ri-discord-fill"></i></a>
+            <a href="https://www.reddit.com/r/divide_by_zero/" class="social_icon"><i class="ri-reddit-fill"></i></a>
+            <a href="https://github.com/nannipy/dividebyzero.git" class="social_icon"><i class="ri-github-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</html>

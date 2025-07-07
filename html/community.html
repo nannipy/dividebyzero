@@ -1,0 +1,237 @@
+<!--  
+    community.html
+      Pagina contentente dei banner di reindirizzamento ai profili social dell'organizzazione.
+-->
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Giovanni Pernazza & Alessandro Maone">
+    <title>Divide by Zero</title>
+    <link rel="icon" type="image/x-icon" href="../img/Logo_DBZ_red.png">
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- icone -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+
+  </head>
+  <body>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--banner di login-->
+  <section class="home">
+    <div class="form_container">
+      <i class="ri-close-line form_close"></i>
+      <!--Login-->
+      <div class="form login_form">
+        <form action="login.php" method="POST" name="login">
+          <h2>Login</h2>
+          
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" name="email" class="loginEmail" required />
+            <i class="ri-mail-line email"></i>
+          </div>
+          
+          <div class="input_box">
+            <input type="password" placeholder="Enter your password" name="password" class="loginPassword" required />
+            <i class="ri-lock-line password"></i>
+            <i class="ri-eye-off-line pw_hide"></i>
+          </div>
+
+          <div class="option_field">
+            <span class="checkbox">
+              <input type="checkbox" id="check" name="checkbox">
+              <label for="check">Remember me</label>
+            </span>
+          </div>
+
+          <button class="btn btn-bd-primary button">Login Now</button>
+
+          <div class="login_signup">
+            Don't have an account? <a href="#" id="signup">Sign-up</a>
+          </div>
+        </form>
+      </div>
+
+      <!--Sign-up-->
+      <div class="form signup_form">
+        <form action="signup.php" method="POST" class="su_form" onsubmit="return validaForm();">
+          <h2>Sign-up</h2>
+          
+          <div class="input_box email_field">
+            <input type="email" placeholder="Enter your email" name="email" class="email" />
+            <i class="ri-mail-line email"></i>
+            <span class="error email-error">
+              <i class="ri-error-warning-line error-icon"></i>
+              <p class="error-text">Please enter a valid email</p>
+            </span>
+          </div>
+          
+          <div class="input_box create_psw">
+            <input type="password" placeholder="Create password" name="password" class="password" />
+            <i class="ri-lock-line password"></i>
+            <i class="ri-eye-off-line pw_hide"></i>
+            <span class="error password-error">
+              <i class="ri-error-warning-line error-icon"></i>
+              <p class="error-text">Please enter at least 8 character with number,
+                symbol, small and capital letter.
+              </p>
+            </span>
+          </div>
+          
+          <div class="input_box confirm_psw">
+            <input type="password" placeholder="Confirm password" name="cpassword" class="cpassword" />
+            <i class="ri-lock-line password"></i>
+            <i class="ri-eye-off-line pw_hide"></i>
+            <span class="error cpassword-error">
+              <i class="ri-error-warning-line error-icon"></i>
+              <p class="error-text">Password dont't match</p>
+            </span>
+          </div>
+
+          <div class="option_field">
+            <span class="checkbox">
+              <input type="checkbox" id="checktc" name="checkbox" required>
+              <label for="checktc">Accept terms and conditions</label>
+            </span>
+          </div>
+          
+          <input type="submit" value="Sign-up Now" class="btn btn-bd-primary button"></input>
+
+          <div class="login_signup">
+            Already have an account? <a href="#" id="login">Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+    
+  <!--header pagine-->
+  <header>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <a href="index.html" class="logo"><img class="logo_img" src="../img/Logo_DBZ_red.png" alt="100px" width="100px"> DIVIDE BY ZERO</a>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="events.php">Eventi</a></li>
+        <li><a class="active" href="community.html">Community</a></li>
+        <li><a href="whoweare.html">Chi siamo</a></li>
+      </ul>
+    </nav>
+    <div class="login">
+      <a class="acc" id="login-open"><i class="ri-user-fill"></i>Login</a>
+      <a class="vline">|</a>
+      <a class="reg" id="signup-open">Sign Up</a>
+    </div>
+  </header>
+
+  <!--sezione principale-->
+  <main>
+    <div class="row align-items-md-stretch" style="margin:auto">
+        <!--Discord-->
+        <div class="col-md-6 mobile">
+          <div class=" animationbumpopposite h-100 p-5 bg-violet rounded-3 text-light">
+            <h2 class="livetext"><i class="ri-discord-fill"></i> Discord</h2>
+            <p>Il nostro canale Discord è un luogo in cui puoi divertirti e rilassarti.
+              Organizziamo regolarmente giochi, competizioni e attività interattive che ti
+              permetteranno di conoscere meglio gli altri membri della community e di divertirti insieme a loro.
+            </p>
+            <button class="btn btn-outline-light" type="button" onclick="window.location.href = 'https://discord.gg/5gD6bk52'"> Parliamo </button>
+          </div>
+        </div>
+        
+        <!--GitHub-->
+        <div class="col-md-6 mobile">
+          <div class=" animationbump h-100 p-5 text-light border rounded-3 bg-github">
+            <h2 class="livetext" ><i class="ri-github-fill"></i> GitHub</h2>
+            <p> La nostra repository GitHub è un luogo in cui puoi costruire relazioni professionali
+              e connetterti con persone che condividono la tua passione per la programmazione.
+              Potrai creare una rete di contatti nel settore, trovare mentori e potenziali collaboratori per futuri progetti.
+            </p>
+            <button class="btn btn-outline-secondary" type="button" onclick="window.location.href = 'https://github.com/nannipy/dividebyzero.git'"> La nostra repository </button>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <p>
+        </p>
+      </div>
+
+      <div class="row align-items-md-stretch" style="margin:auto">
+        <!--Reddit-->
+        <div class="col-md-6">
+          <div class=" animationbumpopposite h-100 p-5 bg-reddit rounded-3 text-light">
+            <h2 class="livetext"><i class="ri-reddit-fill"></i> Reddit</h2>
+            <p> Il nostro subreddit è un ambiente accogliente e inclusivo. Promuoviamo il rispetto reciproco e
+              incoraggiamo tutti i membri a partecipare alle discussioni in modo costruttivo e civile.
+              Potrai imparare da diverse prospettive, ottenere consigli, scoprire nuove idee e interagire con
+              persone provenienti da diverse esperienze di vita e culture.
+            </p>
+            <button class="btn btn-outline-light" type="button" onclick="window.location.href = 'https://www.reddit.com/r/divide_by_zero/'"> Redditata </button>
+          </div>
+        </div>
+
+        <!--Instagram-->
+        <div class="col-md-6 mobile">
+          <div class=" animationbump h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2 class="livetext"><i class="ri-instagram-line"></i>Instagram</h2>
+            <p> La nostra community su Instagram è anche impegnata nel fornire contenuti utili e informativi.
+              Potrai trovare consigli pratici, guide, suggerimenti e trucchi relativi ai tuoi interessi specifici.
+              Inoltre, potremmo organizzare sessioni di domande e risposte, in cui potrai porre le tue domande
+              direttamente ai nostri esperti o influencer di settore.
+            </p>
+            <button class="btn btn-outline-secondary" type="button" onclick="window.location.href = 'https://www.instagram.com/dividebyzero.community/'">Seguici</button>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <p>
+        </p>
+      </div>
+  </main>
+
+  <script src="../script.js"></script>
+
+  <!--fondo pagina-->
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md" style="text-align: center;">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="whoweare.html">Chi siamo</a></li>
+          <li><a class="link-secondary" href="#">Privacy</a></li>
+          <li><a class="link-secondary" href="#">Terms</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md" style="text-align: center;">
+        <h5>Newsletter</h5>
+        <br>
+        <form action="newsletter.php" method="POST" name="newsletter" class="col-md" onsubmit="verificaForm();">
+          <input type="email" name="email" placeholder="Your email address" class="form-control" style="text-align: center;">
+          <br style="line-height: 10%;">
+          <input type="submit" value="SUBSCRIBE NOW" class="btn btn-bd-primary">
+        </form>
+      </div>
+      <div class="col-6 col-md" style="text-align: center;">
+        <h5>Contact</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a href="https://www.instagram.com/dividebyzero.community/" class="social_icon"><i class="ri-instagram-line"></i></a>
+            <a href="https://discord.gg/5gD6bk52" class="social_icon"><i class="ri-discord-fill"></i></a>
+            <a href="https://www.reddit.com/r/divide_by_zero/" class="social_icon"><i class="ri-reddit-fill"></i></a>
+            <a href="https://github.com/nannipy/dividebyzero.git" class="social_icon"><i class="ri-github-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</html>
