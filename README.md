@@ -57,6 +57,26 @@ Per il corretto funzionamento del sito, è necessario creare un database con le 
   - `event_id` (INT, FOREIGN KEY REFERENCES events(id))
 
 ---
+## 🖼️ Screenshot delle Pagine Principali
+
+<p align="center">
+  <b>Homepage</b><br>
+  <img src="img/Screenshot-home.png" alt="Screenshot Homepage" width="600"/>
+</p>
+
+<p align="center">
+  <b>Community</b><br>
+  <img src="img/Screenshot-community.png" alt="Screenshot Community" width="600"/>
+</p>
+
+<p align="center">
+  <b>About Us</b><br>
+  <img src="img/Screenshot-about-us.png" alt="Screenshot About Us" width="600"/>
+</p>
+
+
+
+---
 
 ## 🔧 Installazione
 
