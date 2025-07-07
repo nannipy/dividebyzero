@@ -1,4 +1,10 @@
-# Divide by Zero
+<p align="center">
+  <img src="img/Logo_DBZ_red.png" alt="Divide by Zero Logo" width="220"/>
+</p>
+
+<h1 align="center">Divide by Zero</h1>
+<p align="center">
+  Una piattaforma web per eventi e community studentesca</p>
 
 ## 📌 Descrizione del Progetto
 
